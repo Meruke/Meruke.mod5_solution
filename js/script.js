@@ -145,6 +145,20 @@ dc.loadMenuCategories = function () {
     allCategoriesUrl,
     buildAndShowCategoriesHTML);
 };
+  dc.loadAboutPage = function () {
+  showLoading("#main-content");
+  $ajaxUtils.sendGetRequest(
+    aboutPageUrl,
+    buildAndShowAboutHTML);
+};
+
+  dc.loadAwardsPage = function () {
+  showLoading("#main-content");
+  $ajaxUtils.sendGetRequest(
+    awardsPageUrl,
+    buildAndShowAwardsHTML);
+};
+
 
 
 // Load the menu items view
